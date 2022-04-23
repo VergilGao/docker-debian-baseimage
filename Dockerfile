@@ -7,6 +7,7 @@ RUN echo "deb http://deb.debian.org/debian bullseye contrib non-free" >> /etc/ap
     apt-get update && \
     apt-get -y install --no-install-recommends \
       wget \
+      gosu \
       locales \
       procps && \
       apt-get -y install --reinstall ca-certificates && \
